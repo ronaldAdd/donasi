@@ -1,6 +1,6 @@
 const express =  require('express')
 const app = express();
-const port = 5000
+const port = process.env.PORT || 5000
 const multer = require('multer');
 const bodyParser = require('body-parser');
 const donationSchema = require('./models/donation');
