@@ -33,7 +33,12 @@ require('./startup/routes')(app);
 require('./database/mongodb');
 
 app.get('/',async (req,res,next) =>{
-res.status(200).send('Hello World!');
+    res.write('<html>');
+    res.write('<body>');
+    res.write('<h1>Hello, World!...</h1>');
+    res.write('</body>');
+    res.write('</html>');
+    res.end();    
 })
 
 app.post('/api/donation',upload.single('image'),async (req,res,next) =>{
