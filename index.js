@@ -5,11 +5,15 @@ const multer = require('multer');
 const bodyParser = require('body-parser');
 const donationSchema = require('./models/donation');
 const { validate } = require('./models/donation');
+const cors = require("cors");
 
 
 app.use(express.static("public"));
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
+app.disable('etag');
+app.use(cors());
+
 // app.use(express.json()); // Used to parse JSON bodies
 // app.use(express.urlencoded({ extended: true })) // for form data
 
