@@ -1,0 +1,27 @@
+{
+  "name": "donasi",
+  "version": "1.0.0",
+  "description": "donation backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldAdd/donasi.git"
+  },
+  "author": "ronald adriansyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldAdd/donasi/issues"
+  },
+  "homepage": "https://github.com/ronaldAdd/donasi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.7",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15"
+  }
+}
